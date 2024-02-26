@@ -15,6 +15,16 @@ You can install these dependencies using pip:
 bash
 pip install streamlit nltk scikit-learn
 
+To Setup:
+mkdir -p ~/.streamlit/
+echo "\
+[server]\n\
+port = $PORT\n\
+enableCORS = false\n\
+headless = true\n\
+\n\
+" > ~/.streamlit/config.toml
+
 Usage
 To run the SMS spam detection system, execute the following command:
 
